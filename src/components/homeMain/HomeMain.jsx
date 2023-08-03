@@ -14,12 +14,12 @@ const HomeMain = () => {
 
   const getCharacterByName = async () => {
     setLoading(true);
-
+    if (characterName.length === 0) return alertError(messages.fieldsIncomplete, 'upss');
     try {
       const {data} = await clientAxios.get(`${endPoints.searchCharacterByName}/?search=${characterName}`)
       setCharacters(data.results);
     } catch (error) {
-      alertError(messages.genericFailGet,'Upss', console.log(error.message));
+      alertError(messages.searchCharacterFailGet,'Upss', console.log(error.message));
     } 
     setLoading(false)
   };

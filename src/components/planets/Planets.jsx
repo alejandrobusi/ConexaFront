@@ -51,7 +51,7 @@ const Planets = () => {
                   <p className='text-white textShadow'>Here you can see all the existing planets of the <strong>Star Wars</strong> saga. in total there are <strong>{planets.count}</strong> planets.</p>
                 </div>
                 <div className='d-flex flex-wrap justify-content-center'>
-                  {planets.results.map((planet, i) => {
+                  {planets.results && planets.results.map((planet, i) => {
                     return <Card key={i} planet={planet} type='planet' />;
                   })}
                 </div> 

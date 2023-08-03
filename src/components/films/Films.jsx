@@ -42,7 +42,7 @@ const Films = () => {
                   <p className='text-white textShadow'>Here you can see all the existing films of the <strong>Star Wars</strong> saga. in total there are <strong>{films.count}</strong> films.</p>
                 </div>
                 <div className='d-flex flex-wrap justify-content-center'>
-                  {films.results.map((film, i) => {
+                  {films.results && films.results.map((film, i) => {
                     return <Card key={i} film={film} type='film' />;
                   })}
                 </div> 

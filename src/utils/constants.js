@@ -9,6 +9,9 @@ export const endPoints = {
 
 export const messages = {
   genericFailGet: 'An error has occurred, we will take you to the main page',
+  searchCharacterFailGet:
+    'A problem occurred while trying to fetch the characters. try again later',
+  fieldsIncomplete: 'You must complete required fields',
 };
 
 export const urlImages = [
