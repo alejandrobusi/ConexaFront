@@ -50,7 +50,7 @@ const People = () => {
                   <h1 className='text-white textShadow'>Characters of <strong>Star Wars</strong></h1>
                   <p className='text-white textShadow'>Here you can see all the existing characters of the <strong>Star Wars</strong> saga. in total there are <strong>{characters.count}</strong> characters.</p>
                 </div>
-                <div className='d-flex flex-wrap justify-content-center'>
+                <div className='d-flex flex-wrap justify-content-center animate__animated animate__bounceIn'>
                   {characters.results && characters.results.map((character, i) => {
                     return <Card key={i} character={character} type='character' />;
                   })}

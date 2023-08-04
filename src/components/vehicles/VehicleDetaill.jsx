@@ -40,9 +40,9 @@ const VehicleDetaill = () => {
           :
             <>
               <div className='col-12 col-lg-6 p-0'>
-                <img src={imgDefault} className='img-fluid' alt='' />
+                <img src={imgDefault} className='img-fluid animate__animated animate__bounceIn' alt='' />
               </div>
-              <div className='col-12 col-lg-6 d-flex flex-wrap'>
+              <div className='col-12 col-lg-6 d-flex flex-wrap animate__animated animate__bounceIn'>
                 <div className='col-12 col-lg-6'>
                   <h3 className='text-white border-bottom border-danger mt-3 mt-lg-0'><strong>Name:</strong> {vehicleData?.ship?.name}</h3>
                   <h4><strong>Model:</strong> {vehicleData?.ship?.model}</h4>

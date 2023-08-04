@@ -50,7 +50,7 @@ const Planets = () => {
                   <h1 className='text-white textShadow'>Planets of <strong>Star Wars</strong></h1>
                   <p className='text-white textShadow'>Here you can see all the existing planets of the <strong>Star Wars</strong> saga. in total there are <strong>{planets.count}</strong> planets.</p>
                 </div>
-                <div className='d-flex flex-wrap justify-content-center'>
+                <div className='d-flex flex-wrap justify-content-center animate__animated animate__bounceIn'>
                   {planets.results && planets.results.map((planet, i) => {
                     return <Card key={i} planet={planet} type='planet' />;
                   })}

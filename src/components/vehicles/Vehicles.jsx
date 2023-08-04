@@ -50,7 +50,7 @@ const Vehicles = () => {
                   <h1 className='text-white textShadow'>Vehicles of <strong>Star Wars</strong></h1>
                   <p className='text-white textShadow'>Here you can see all existing vehicles from the <strong>Star Wars</strong> saga. You can also view more detailed information about the vehicles, such as the movies they appear in and the drivers, by clicking <strong>Show more</strong>. in total there are <strong>{vehicles.count}</strong> vehicles.</p>
                 </div>
-                <div className='d-flex flex-wrap justify-content-center'>
+                <div className='d-flex flex-wrap justify-content-center animate__animated animate__bounceIn'>
                   {vehicles.results && vehicles.results.map((vehicle, i) => {
                     return <Card key={i} vehicle={vehicle} type='vehicle' />;
                   })}

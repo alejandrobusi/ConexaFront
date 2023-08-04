@@ -49,7 +49,7 @@ const HomeMain = () => {
               </button>
             </div>
           </div>
-          <div className='col-12 d-flex flex-wrap justify-content-center'>
+          <div className='col-12 d-flex flex-wrap justify-content-center animate__animated animate__bounce'>
             { 
               loading
               ? null
