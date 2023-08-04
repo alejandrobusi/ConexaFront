@@ -34,7 +34,6 @@ const HomeMain = () => {
 
   return (
     <>
-      
       <div className={`container-fluid ${mainBgc}`}>
         <div className=' mt-3 text-white'>
           <div className='m-4'>
@@ -42,7 +41,7 @@ const HomeMain = () => {
             <p className='text-white textShadow'>Here you can do a search by name of the existing characters of the <strong>Star Wars</strong> saga. This form only returns information that matches the search. the search field is required.</p>
           </div>
           <div className='m-4 d-flex justify-content-center'>
-            <div className='col-8 col-lg-3 my-3 d-flex'>
+            <div className='col-12 col-lg-3 my-3 d-flex'>
               <input type="text" className="form-control" value={characterName} onChange={handleInputChange} required maxLength={25} placeholder="Enter character name"/>
               <button onClick={handleSearch} className='btn btn-dark border border-danger mx-3' disabled={loading}>
                 {loading ? "Searching..." : "Search"}
@@ -58,7 +57,9 @@ const HomeMain = () => {
           </div>
         </div>
       </div>
-      <StarWarsAnimation />
+      <div className='d-none d-lg-inline'>
+        <StarWarsAnimation />
+      </div>
     </>
   )
 }

@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import { imgNav } from './navBar.module.css';
+import logoNav from '../../assets/star-wars-logo-nav.png';
 
 const NavBar = () => {
   return (
     <nav className='navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body' data-bs-theme='dark'>
       <div className='container-fluid'>
-        <img src="https://1000marcas.net/wp-content/uploads/2019/12/Star-Wars-Logo-5.png" className={imgNav} alt="Logo navbar" />
+        <img src={logoNav} className={imgNav} alt="Logo navbar" />
         <button
           className='navbar-toggler'
           type='button'
